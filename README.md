@@ -1,2 +1,25 @@
-# kickstarter-analysis
- Analaysis of kickstarter spreadsheet for HW#1
+# Kickstarter Data Analysis of Funding For Theater Projects
+
+## Overview of Project
+ Louise, a playwright, wanted to know how successful different campaigns for plays based on their launch dates and funding goals. Data was collected through Kickstarter and raw data was outputted through an excel spreadsheet.  
+### Purpose
+The purpose of the data analysis was to determine the effect of fundraising efforts based on the launch date of the play and also the targeted amount of funding needed. 
+## Analysis and Challenges
+To better perform analysis of the data, the raw data needed to be sorted into major categories and subcategories. After clearly defining these fields, the date needed to be converted from Unix timestamps to readable date format. The data was then sorted by category then date to produce the Theater Outcomes Based on Launch Date chart. 
+### Analysis of Outcomes Based on Launch Date
+Theater Outcomes Based on Launch Date chart displayed the count of successful, failed and canceled theater activities versus month of launch. The data was consolidated using pivot tables in excel and plotting filtered data by parent category “theater” then grouping the date by month to achieve the displayed chart. The “Live” category data was excluded from this analysis due to the lack of relevance.
+### Analysis of Outcomes Based on Goals
+To plot the Outcomes Based on Goals graph, the data was broken up based on ranges in dollar amounts. Increments of $5000 were used up to $50000, while anything below $1000 and anything above $50000 were used in their own categories. The data was then filtered by the subcategory “plays” and data in successful, failed and canceled were counted. According to the data there were no cancelled plays in the set. 
+### Challenges and Difficulties Encountered
+Challenges that could have occurred to create this chart were mainly related to the sorting of the data. Through pivot tables the data was filtered by parent category and years. The dates were grouped based on month. The displayed data would have been altered if the order of filter was not correct. Additional challenges were encountered when using the COUNTIF function. The conditions in chosen based on range had to be carefully checked or else the count would be incorrect. To sanity check this a smaller raw data set was displayed into a pivot table to ensure the accuracy of the plot. Additionally, plotting the actual line graph was diffcult to do without the use of Pivot plot. The x axis values were text based as opposed to value based which typically would be better plotted using bar charts. 
+
+## Results
+
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+Overall based on the chart the amount of successfully funded theater activities were greater than failed theater activities and canceled activities. The greatest difference between successful and failed events was in the month of May. It could be inferred from the data that the best month to launch a theater activity would be in May to achieve the most successful funding. October and December were the worst months to launch funding campaigns for projects. However, this analysis did not take into account the funding amount or amount of backers for the project.  
+- What can you conclude about the Outcomes based on Goals?
+Overall based on the line graph there is an inverse relationship between successful funding campaigns versus goal amount. The greater amount the goal the less likely the funding campaign will be successful. More specifically, if the goal was set less than $1000 dollars there was an 80% chance to succeed. While if the goal range was between $25000-$34999 as well as greater than $50000 the campaign would be likely to fail. It could be inferred that the market values plays at less than $1000 and between $35000-$45000.   
+- What are some limitations of this dataset?
+Some limitations with data set would be the outcome criteria was not defined. What would be the conditions that determine a successful campaign versus a failed? Would there be a threshold of percent funded or amount of backers were not enough? The subcategory data could also be better defined for the type of plays. For example do comedies get better funding vs drama or musicals? There was also questions regarding the spaces sub category. This seemed to have been funding for real estate and not actual play content. Therefore it may have been better to exclude this data from the theater analysis. 
+- What are some other possible tables and/or graphs that we could create?
+Some other possible insights through tables and graphs could be the outcome based on the goal amount and the amount of backers. This may shed light on the type of backers that funded these projects. Another dimension that could be looked at would be more on the marketing side of the plays. For example would there be any relationship between title or blurb language to affect the success of the funding campaign. Much like SEO activities would there be key words that attract backers to fund projects. 
